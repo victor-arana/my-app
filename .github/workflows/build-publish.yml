@@ -38,4 +38,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${{ env.GITHUB_SHA }}
+        tags: ${{DOCKER_REGISTRY}}/${{DOCKER_IMAGE_NAME}}:${{ env.GITHUB_SHA }}
