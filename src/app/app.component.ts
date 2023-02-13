@@ -9,7 +9,7 @@ import { WebcamImage, WebcamInitError, WebcamUtil } from 'ngx-webcam';
 })
 export class AppComponent implements OnInit{
   private trigger: Subject<any> = new Subject();
-  private webcamImage!: WebcamImage;
+  public webcamImage!: WebcamImage;
   private nextWebCam: Subject<any> = new Subject();
   sysImage = '';
   ngOnInit() {}
