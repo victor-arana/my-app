@@ -27,5 +27,4 @@ export class AppComponent implements OnInit{
   public get nextWebCamObservable(): Observable<any> {
     return this.nextWebCam.asObservable();
   }
-  title = 'Tour of Heroes';
 }
