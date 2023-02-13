@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nodata-deployment
+  labels:
+    app: my-app
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: victorarana/my-app:2023-02-12--12-57
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80 
